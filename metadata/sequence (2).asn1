@@ -1,0 +1,372 @@
+Seq-entry ::= seq {
+  id {
+    genbank {
+      name "AMVJ01000000" ,
+      accession "AMVJ00000000" ,
+      version 1 } ,
+    gi 408348642 } ,
+  descr {
+    source {
+      org {
+        taxname "Escherichia coli 0.1288" ,
+        db {
+          {
+            db "taxon" ,
+            tag
+              id 1005442 } } ,
+        orgname {
+          name
+            binomial {
+              genus "Escherichia" ,
+              species "coli" } ,
+          mod {
+            {
+              subtype strain ,
+              subname "0.1288" } ,
+            {
+              subtype serotype ,
+              subname "O157:H7" } ,
+            {
+              subtype nat-host ,
+              subname "Bos taurus" } } ,
+          lineage "Bacteria; Proteobacteria; Gammaproteobacteria;
+ Enterobacterales; Enterobacteriaceae; Escherichia" ,
+          gcode 11 ,
+          div "BCT" } } ,
+      subtype {
+        {
+          subtype country ,
+          name "USA" } ,
+        {
+          subtype collection-date ,
+          name "2000" } } } ,
+    molinfo {
+      biomol genomic ,
+      tech wgs } ,
+    pub {
+      pub {
+        sub {
+          authors {
+            names
+              std {
+                {
+                  name
+                    name {
+                      last "Eppinger" ,
+                      first "Mark" ,
+                      initials "M." } } ,
+                {
+                  name
+                    name {
+                      last "Daugherty" ,
+                      first "Sean" ,
+                      initials "S." } } ,
+                {
+                  name
+                    name {
+                      last "Agrawal" ,
+                      first "Sonia" ,
+                      initials "S." } } ,
+                {
+                  name
+                    name {
+                      last "Galens" ,
+                      first "Kevin" ,
+                      initials "K." } } ,
+                {
+                  name
+                    name {
+                      last "Tallon" ,
+                      first "Luke" ,
+                      initials "L." } } ,
+                {
+                  name
+                    name {
+                      last "Shefchek" ,
+                      first "Kent" ,
+                      initials "K." } } ,
+                {
+                  name
+                    name {
+                      last "Parankush" ,
+                      first "Sushma" ,
+                      initials "S." } } ,
+                {
+                  name
+                    name {
+                      last "Cebula" ,
+                      first "Thomas" ,
+                      initials "T.A." } } ,
+                {
+                  name
+                    name {
+                      last "Feng" ,
+                      first "Peter" ,
+                      initials "P." } } ,
+                {
+                  name
+                    name {
+                      last "Soderlund" ,
+                      first "Robert" ,
+                      initials "R." } } ,
+                {
+                  name
+                    name {
+                      last "Mammel" ,
+                      first "Mark" ,
+                      initials "M.K." } } ,
+                {
+                  name
+                    name {
+                      last "DebRoy" ,
+                      first "Chitrita" ,
+                      initials "C." } } ,
+                {
+                  name
+                    name {
+                      last "Dudley" ,
+                      first "Edward" ,
+                      initials "E.G." } } ,
+                {
+                  name
+                    name {
+                      last "Tarr" ,
+                      first "Phillip" ,
+                      initials "P.I." } } ,
+                {
+                  name
+                    name {
+                      last "Fraser-Liggett" ,
+                      first "Claire" ,
+                      initials "C." } } ,
+                {
+                  name
+                    name {
+                      last "Ravel" ,
+                      first "Jacques" ,
+                      initials "J." } } } ,
+            affil
+              std {
+                affil "University of Maryland School of Medicine" ,
+                div "Institute for Genome Sciences" ,
+                city "Baltimore" ,
+                sub "MD" ,
+                country "USA" ,
+                street "801 W. Baltimore St." ,
+                email "meppinger@som.umaryland.edu" ,
+                fax "410-706-1482" ,
+                phone "410-706-6764" ,
+                postal-code "21201" } } ,
+          date
+            std {
+              year 2012 ,
+              month 6 ,
+              day 25 } } } } ,
+    pub {
+      pub {
+        gen {
+          cit "Unpublished" ,
+          authors {
+            names
+              std {
+                {
+                  name
+                    name {
+                      last "Eppinger" ,
+                      first "Mark" ,
+                      initials "M." } } ,
+                {
+                  name
+                    name {
+                      last "Daugherty" ,
+                      first "Sean" ,
+                      initials "S." } } ,
+                {
+                  name
+                    name {
+                      last "Agrawal" ,
+                      first "Sonia" ,
+                      initials "S." } } ,
+                {
+                  name
+                    name {
+                      last "Galens" ,
+                      first "Kevin" ,
+                      initials "K." } } ,
+                {
+                  name
+                    name {
+                      last "Tallon" ,
+                      first "Luke" ,
+                      initials "L." } } ,
+                {
+                  name
+                    name {
+                      last "Shefchek" ,
+                      first "Kent" ,
+                      initials "K." } } ,
+                {
+                  name
+                    name {
+                      last "Parankush" ,
+                      first "Sushma" ,
+                      initials "S." } } ,
+                {
+                  name
+                    name {
+                      last "Cebula" ,
+                      first "Thomas" ,
+                      initials "T.A." } } ,
+                {
+                  name
+                    name {
+                      last "Feng" ,
+                      first "Peter" ,
+                      initials "P." } } ,
+                {
+                  name
+                    name {
+                      last "Soderlund" ,
+                      first "Robert" ,
+                      initials "R." } } ,
+                {
+                  name
+                    name {
+                      last "Mammel" ,
+                      first "Mark" ,
+                      initials "M.K." } } ,
+                {
+                  name
+                    name {
+                      last "DebRoy" ,
+                      first "Chitrita" ,
+                      initials "C." } } ,
+                {
+                  name
+                    name {
+                      last "Dudley" ,
+                      first "Edward" ,
+                      initials "E.G." } } ,
+                {
+                  name
+                    name {
+                      last "Tarr" ,
+                      first "Phillip" ,
+                      initials "P.I." } } ,
+                {
+                  name
+                    name {
+                      last "Fraser-Liggett" ,
+                      first "Claire" ,
+                      initials "C." } } ,
+                {
+                  name
+                    name {
+                      last "Ravel" ,
+                      first "Jacques" ,
+                      initials "J." } } } ,
+            affil
+              std {
+                affil "University of Maryland School of Medicine" ,
+                div "Institute for Genome Sciences" ,
+                city "Baltimore" ,
+                sub "MD" ,
+                country "USA" ,
+                street "801 W. Baltimore St." ,
+                email "meppinger@som.umaryland.edu" ,
+                fax "410-706-1482" ,
+                phone "410-706-6764" ,
+                postal-code "21201" } } ,
+          title "Genomic anatomy of Escherichia coli O157:H7 outbreaks" } } } ,
+    comment "Bacterial source available from the Biodefense and Emerging
+ Infections Research Resources Repository" ,
+    user {
+      type
+        str "StructuredComment" ,
+      data {
+        {
+          label
+            str "StructuredCommentPrefix" ,
+          data
+            str "##Genome-Assembly-Data-START##" } ,
+        {
+          label
+            str "Assembly Method" ,
+          data
+            str "Velvet v. 1.2.01" } ,
+        {
+          label
+            str "Genome Coverage" ,
+          data
+            str "205.27x" } ,
+        {
+          label
+            str "Sequencing Technology" ,
+          data
+            str "Illumina" } ,
+        {
+          label
+            str "StructuredCommentSuffix" ,
+          data
+            str "##Genome-Assembly-Data-END##" } } } ,
+    user {
+      type
+        str "WGSProjects" ,
+      data {
+        {
+          label
+            str "WGS_accession_first" ,
+          data
+            str "AMVJ01000001" } ,
+        {
+          label
+            str "WGS_accession_last" ,
+          data
+            str "AMVJ01000170" } } } ,
+    user {
+      type
+        str "DBLink" ,
+      data {
+        {
+          label
+            str "BioProject" ,
+          num 1 ,
+          data
+            strs {
+              "PRJNA65697" } } ,
+        {
+          label
+            str "BioSample" ,
+          num 1 ,
+          data
+            strs {
+              "SAMN00808719" } } } } ,
+    user {
+      type
+        str "WGS-Scaffold-List" ,
+      data {
+        {
+          label
+            str "Accession_first" ,
+          data
+            str "JH943333" } ,
+        {
+          label
+            str "Accession_last" ,
+          data
+            str "JH943468" } } } ,
+    create-date
+      std {
+        year 2012 ,
+        month 10 ,
+        day 4 } ,
+    update-date
+      std {
+        year 2013 ,
+        month 11 ,
+        day 19 } } ,
+  inst {
+    repr virtual ,
+    mol dna ,
+    length 170 } }
+
