@@ -1,23 +1,31 @@
+<h2>
+  Accession numbers</h2>
 
-<h2>Accession numbers</h2>
 
-  
-  <md-input-container class="example-full-width">
-      <textarea mdInput placeholder="Accessions" [(ngModel)]="accessions"></textarea>
-  </md-input-container>
+<md-input-container class="example-full-width">
+  <textarea mdInput placeholder="Accessions" [(ngModel)]="accessions"></textarea>
+</md-input-container>
 
 <br>
 <button md-raised-button (click)="extractAccessions()">Extract genomes</button>
 
 
+<!--Show the added and non added attributes-->
+<div fxLayout="column" fxLayoutAlign="space-between stretch">
+  <md-card *ngFor="let accession of accessionsMeta" style="margin:10px">
 
+    <h2 md-line>{{accession.accession}}</h2>
+    <div fxLayout="row" fxLayoutAlign="space-around start">
+      <div fxFlex="50">
+        <h3>Raw data</h3>
 
-<md-list>
-  <h3 md-subheader>Proof Read Attributes</h3>
-  <md-list-item *ngFor="let folder of folders">
-    <md-icon md-list-icon>folder</md-icon>
-    <h4 md-line>{{folder.name}}</h4>
-    <p md-line> {{folder.updated | date}} </p>
-  </md-list-item>
-  
-</md-list>
+        <p  *ngFor="let element of accession.rawMetadata[0]" fxLayout="row" fxLayoutAlign="space-between start"> <strong>{{ element.key}}</strong>  <span>{{element.value}}</span> </p>
+
+       
+      </div>
+      <div fxFlex="50">
+        <h3>Curated data</h3>
+      </div>
+    </div>
+  </md-card>
+</div>

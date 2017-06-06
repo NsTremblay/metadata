@@ -14,9 +14,29 @@ exports.getMetaDataFromNuccore = function(accession){
 }
 
 function seqInformation(sequence){
-    var seqInfo = {};
+    var seqInfo =[];
     for (var element in sequence){
-        seqInfo[element.replace("GBSeq_","")] = sequence[element];
+        var key = element.replace("GBSeq_","") ;
+        var obj = {};
+        obj.key = key;
+        obj.value = sequence[element][0];
+
+        if(key =='feature-table'){
+            var features = sequence[element][0]['GBFeature'][0]['GBFeature_quals'][0]['GBQualifier'];
+            // console.log(JSON.stringify(sequence[element][0]['GBFeature'][0]['GBFeature_quals']));
+            
+            for (var feature in features){
+                var obj = {};
+                console.log(JSON.stringify(feature));
+                obj.key = features[feature]['GBQualifier_name'][0];
+                obj.value = features[feature]['GBQualifier_value'][0];
+                console.log(JSON.stringify(feature));
+                seqInfo.push(obj);
+            }
+        }else{
+            seqInfo.push(obj);
+        }
+        
     }
     return seqInfo;
 }

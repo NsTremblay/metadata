@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
-
+import { FlexLayoutModule } from "@angular/flex-layout";
 import { AppComponent } from './app.component';
 
 import {MdButtonModule, MdCheckboxModule,MdInputModule, MaterialModule} from '@angular/material';
@@ -30,6 +30,7 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
+    FlexLayoutModule,
     MdButtonModule, MdCheckboxModule,MdInputModule, MaterialModule,
     RouterModule.forRoot(appRoutes)
   ],
