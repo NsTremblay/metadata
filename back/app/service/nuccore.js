@@ -13,12 +13,31 @@ exports.getMetaDataFromNuccore = function(accession){
 
 }
 
+function seqInformation(sequence){
+    var seqInfo = {};
+    for (var element in sequence){
+        seqInfo[element.replace("GBSeq_","")] = sequence[element];
+    }
+    return seqInfo;
+}
+
+function getMainMetadata(crude){
+
+    var refined  = [];
+
+    //loop through all of the GBSeq and try to get everything
+    for(var i = 0; i<crude['GBSet']['GBSeq'].length; i++){
+        refined.push(seqInformation(crude['GBSet']['GBSeq'][i]));
+    }
+
+    return refined || {};
+}
+
 exports.fromXML2js = function (response){
-    var parseString = xml2js.parseString;
-    var xml = response;
-    parseString(xml, function (err, result) {
-        console.log(result);
-    });
+    
+    var filteredResults = getMainMetadata(response);
+    return filteredResults;
+
 }
 
 exports.mapMeta = function (genome){
